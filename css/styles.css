@@ -70,10 +70,10 @@
   --indent-column: 24px;
 }
 
-.customers-list {
+/* .customers-list {
   --items: 6;
   --indent: 24px;
-}
+} */
 
 h1,
 h2,
@@ -462,11 +462,12 @@ body {
 
 .customers-list {
   display: flex;
-  gap: var(--indent);
+  gap: 24px;
 }
 
 .customers-list-item {
-  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+  /* flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items)); */
+  flex-basis: calc((100% - 5 * 24px) / 6);
   border: 1px solid #8e8f99;
   border-radius: 4px;
   height: 88px;
