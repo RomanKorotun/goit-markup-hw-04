@@ -299,10 +299,11 @@ body {
 /* ============================== Features ============================== */
 
 .features-icon-container {
-  padding-top: 24px;
-  padding-right: 100px;
-  padding-bottom: 24px;
-  padding-left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 112px;
+  border-radius: 4px;
   background-color: var(--bg-cl-features-icon-container);
   margin-bottom: 8px;
 }
@@ -484,6 +485,7 @@ body {
 
 .customers-list-link:hover,
 .customers-list-link:focus {
+  color: #404bbf;
   border-color: #404bbf;
 }
 
